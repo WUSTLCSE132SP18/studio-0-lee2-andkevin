@@ -1,15 +1,14 @@
-int n = 0;
+int n=0;
 
 void setup() {
-  Serial.begin(9600);
-  
+   Serial.begin(9600);
 }
-
 void loop() {
-  
-  delay(1000);
-  n += 1;
+  n=n+1;
+  delay(700);
   Serial.print(n);
-  Serial.println("sec have passed");
-  
+  Serial.print(" Thump ... ");
+  delay(299);
+  Serial.println(" thump");
+
 }
